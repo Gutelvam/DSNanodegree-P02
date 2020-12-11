@@ -38,11 +38,13 @@ Disaster response app requires:
         -scikit-learn (>=0.23.1)
 
         -pandas(>=1.0.3)
+	
+	-plotly==4.14.1
 
 ***User installation***
 
 
-If you already have a working installation of  Anaconda, the easiest way to install all others packages like Flask and nltk by using pip:
+If you already have a working installation of  Anaconda, the easiest way to install all others packages like Flask, plotly and nltk by using pip:
  >pip install packagename
 
 Otherwise you can use the comand below to install all requirements needed: 
