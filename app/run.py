@@ -14,6 +14,7 @@ from sqlalchemy import create_engine
 
 app = Flask(__name__)
 
+
 def tokenize(text):
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
@@ -27,111 +28,79 @@ def tokenize(text):
 
 
 # load model
-model = pickle.load(open(".\models\classifier.pkl", 'rb'))
-print('modelo==============================> ', model)
+model = pickle.load(open(".\models\classifier.pkl", "rb"))
 
 # load data
-#engine = create_engine('sqlite:///../data/Disaster.db')
-df = pd.read_sql_table('clean_data', 'sqlite:///./data/Disaster.db')
+# engine = create_engine('sqlite:///../data/Disaster.db')
+df = pd.read_sql_table("clean_data", "sqlite:///./data/Disaster.db")
 
 # index webpage displays cool visuals and receives user input text for model
-@app.route('/')
-@app.route('/index')
+@app.route("/")
+@app.route("/index")
 def index():
-    
     # extract data needed for visuals
-    # Calculate message count by genre and related status    
-    genre_related = df[df['related']==1].groupby('genre').count()['message']
-    genre_not_rel = df[df['related']==0].groupby('genre').count()['message']
+    # Calculate message count by genre and related status
+    genre_related = df[df["related"] == 1].groupby("genre").count()["message"]
+    genre_not_rel = df[df["related"] == 0].groupby("genre").count()["message"]
     genre_names = list(genre_related.index)
-    
+
     # Calculate proportion of each category with label = 1
-    cat_props = df.drop(['id', 'message', 'original', 'genre'], axis = 1).sum()/len(df)
-    cat_props = cat_props.sort_values(ascending = False)
+    cat_props = df.drop(["id", "message", "original", "genre"], axis=1).sum() / len(df)
+    cat_props = cat_props.sort_values(ascending=False)
     cat_names = list(cat_props.index)
-     
 
     # create visuals
     graphs = [
         {
-            'data': [
-                Bar(
-                    x=genre_names,
-                    y=genre_related,
-                    name = 'Related'
-                ),
-                
-                Bar(
-                    x=genre_names,
-                    y=genre_not_rel,
-                    name = 'Not Related'
-                )
+            "data": [
+                Bar(x=genre_names, y=genre_related, name="Related"),
+                Bar(x=genre_names, y=genre_not_rel, name="Not Related"),
             ],
-
-            'layout': {
-                'title': 'Distribution of Messages by Genre and Related Status',
-                'yaxis': {
-                    'title': "Count"
-                },
-                'xaxis': {
-                    'title': "Genre"
-                },
-                'barmode': 'group'
-            }
+            "layout": {
+                "title": "Distribution of Messages by Genre and Related Status",
+                "yaxis": {"title": "Count"},
+                "xaxis": {"title": "Genre"},
+                "barmode": "group",
+            },
         },
         {
-            'data': [
-                Bar(
-                    x=cat_names,
-                    y=cat_props
-                )
-            ],
-
-            'layout': {
-                'title': 'Proportion of Messages by Category',
-                'yaxis': {
-                    'title': "Proportion"
-                },
-                'xaxis': {
-                    'title': "Category",
-                    'tickangle': -45
-                }
-            }
-        }
+            "data": [Bar(x=cat_names, y=cat_props)],
+            "layout": {
+                "title": "Proportion of Messages by Category",
+                "yaxis": {"title": "Proportion"},
+                "xaxis": {"title": "Category", "tickangle": -45},
+            },
+        },
     ]
-    
+
     # encode plotly graphs in JSON
     ids = ["graph-{}".format(i) for i, _ in enumerate(graphs)]
     graphJSON = json.dumps(graphs, cls=plotly.utils.PlotlyJSONEncoder)
-    
+
     # render web page with plotly graphs
-    return render_template('master.html', ids=ids, graphJSON=graphJSON)
+    return render_template("master.html", ids=ids, graphJSON=graphJSON)
 
 
 # web page that handles user query and displays model results
-@app.route('/go')
+@app.route("/go")
 def go():
     # save user input in query
-    query = request.args.get('query', '') 
-    print('---------------> AQUIIII: ', query)
+    query = request.args.get("query", "")
+
     # use model to predict classification for query
-    print('modelo2==============================> ', model)
     classification_labels = model.predict([query])[0]
 
-    print('---------------> AQUIIII======2: ', classification_labels)
     classification_results = dict(zip(df.columns[4:], classification_labels))
 
-    # This will render the go.html Please see that file. 
+    # This will render the go.html Please see that file.
     return render_template(
-        'go.html',
-        query=query,
-        classification_result=classification_results
+        "go.html", query=query, classification_result=classification_results
     )
 
 
 def main():
-    app.run(host='127.0.0.1', port=3001, debug=True)
+    app.run(host="127.0.0.1", port=3001, debug=True)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

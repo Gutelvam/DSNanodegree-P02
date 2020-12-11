@@ -1,14 +1,62 @@
 # Disaster Response Pipeline Project
 
-### Instructions:
-1. Run the following commands in the project's root directory to set up your database and model.
+This projet was intend to apply data engineering skills to analyze disaster data from Figure Eight and build a model for an API that classifies disaster messages.
+
+In the Project Workspace contain real messages that were sent during disaster events. The challeng is to creating a machine learning pipeline to categorize these events so that you can send the messages to an appropriate disaster relief agency.
+
+This project includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app also display visualizations of the data. This project will show off your software skills, including your ability to create basic data pipelines and write clean, organized code!
+
+Below are a few screenshots of the web app.
+1-
+![graph](https://lh3.googleusercontent.com/pw/ACtC-3cXtSCG4s-MB2D-3W3l4QtSC40sq7esqZU-Ovq02QgeSebROtyjIcQsa6Mqhra00oyajCxKDcnGGLmStrWowcXAhpydPXrz8TGqAVoKJu98PzUZlSjiFR2PilmyIZuNhmApoV_BghIKK32AU-nwfDLt=w1218-h937-no?authuser=0)
+
+![disaster-categories] https://lh3.googleusercontent.com/pw/ACtC-3dpqow-QKudII_1PJnUXDaT4JYvupuYApFzzFTFvPAbZEc55_F3nmV3EZksLLrzCSLoaCcbNp_6gckk8DQXanDVlMEwhKg2A1Hhr9SfvX25SdLH8plH2Frx8MH76gfPLynxR_3NW7zOKJrjXzPraPmV=w1032-h924-no?authuser=0
+
+The project was started in 2020 by Gutelvam as a Udacity Nanodegree of project.
+
+<h4>Installation</h4>
+
+***Dependencies***
+
+Disaster response app requires:
+
+        -Python (>= 3.6)
+
+        -Flask(>= 1.1.2)
+	
+	-numpy(>=1.18.4)
+
+        -SciPy(>= 1.4.1)
+
+	-nltk(>=3.5)
+
+        -joblib (>= 0.11)
+
+        -SQLAlchemy(>= 1.3.20)
+
+        -scikit-learn (>=0.23.1)
+
+        -pickle(>=3.2.2)
+
+        -pandas(>=1.0.3)
+
+***User installation***
+
+
+If you already have a working installation of scikit-learn, the easiest way to install all others packages is using pip:
+ >!pip install packagename
+
+
+## Instructions of usage:
+**1.** Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+        `python ./data/process_data.py ./data/disaster_messages.csv ./data/disaster_categories.csv  ./data`
+
     - To run ML pipeline that trains classifier and saves
-        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+        `python ./models/train_classifier.py ./data/Disaster.db ./models`
 
-2. Run the following command in the app's directory to run your web app.
-    `python run.py`
+**2.** Run the following command in the app's directory to run your web app.
+    `python ./app/run.py`
 
-3. Go to http://0.0.0.0:3001/
+**3.** Go to http://127.0.0.1:3001/
