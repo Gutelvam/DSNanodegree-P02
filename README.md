@@ -2,7 +2,7 @@
 
 This projet was intend to apply data engineering skills to analyze disaster data from [Figure Eight(Appen)](https://appen.com/figure-eight-is-now-appen/) and build a model for an API that classifies disaster messages.
 
-In the Project Workspace contain real messages that were sent during disaster events. The challeng is to creating a machine learning pipeline to categorize these events so that you can send the messages to an appropriate disaster relief agency.
+In the Project Workspace contain real messages that were sent during disaster events. The challenge was to create a machine learning pipeline to categorize these events so that we can send the messages to an appropriate disaster relief agency.
 
 This project includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app also display visualizations of the data. This project will show off my software skills, including my ability to create basic data pipelines and write clean, organized code!
 
