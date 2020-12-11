@@ -14,7 +14,6 @@ Below are a few screenshots of the web app.
 
 ![disaster-categories](https://lh3.googleusercontent.com/pw/ACtC-3dpqow-QKudII_1PJnUXDaT4JYvupuYApFzzFTFvPAbZEc55_F3nmV3EZksLLrzCSLoaCcbNp_6gckk8DQXanDVlMEwhKg2A1Hhr9SfvX25SdLH8plH2Frx8MH76gfPLynxR_3NW7zOKJrjXzPraPmV=w1032-h924-no?authuser=0)
 
-The project was started in 2020 by Gutelvam as a Udacity Nanodegree of project.
 
 <h4>Installation</h4>
 
@@ -28,11 +27,11 @@ Disaster response app requires:
 
         -Flask(>= 1.1.2)
 	
-	-numpy(>=1.18.4)
+	    -numpy(>=1.18.4)
 
         -SciPy(>= 1.4.1)
 
-	-nltk(>=3.5)
+	    -nltk(>=3.5)
 
         -joblib (>= 0.11)
 
