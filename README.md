@@ -6,7 +6,7 @@ In the Project Workspace contain real messages that were sent during disaster ev
 
 This project includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app also display visualizations of the data. This project will show off my software skills, including my ability to create basic data pipelines and write clean, organized code!
 
-The project was started in 2020 by Gutelvam as a Udacity Nanodegree of project.
+The project was started in 2020 by Gutelvam as a Udacity Nanodegree project.
 
 Below are a few screenshots of the web app.
 
