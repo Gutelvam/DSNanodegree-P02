@@ -33,20 +33,16 @@ Disaster response app requires:
 
 	    -nltk(>=3.5)
 
-        -joblib (>= 0.11)
-
         -SQLAlchemy(>= 1.3.20)
 
         -scikit-learn (>=0.23.1)
-
-        -pickle(>=3.2.2)
 
         -pandas(>=1.0.3)
 
 ***User installation***
 
 
-If you already have a working installation of  Anaconda, the easiest way to install all others packages like Flask, Joblib and nltk by using pip:
+If you already have a working installation of  Anaconda, the easiest way to install all others packages like Flask and nltk by using pip:
  >!pip install packagename
 
 
