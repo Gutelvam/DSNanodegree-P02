@@ -43,8 +43,10 @@ Disaster response app requires:
 
 
 If you already have a working installation of  Anaconda, the easiest way to install all others packages like Flask and nltk by using pip:
- >!pip install packagename
+ >pip install packagename
 
+Otherwise you can use the comand below to install all requirements needed: 
+ >install -r requirements.txt 
 
 ## Instructions of usage:
 **1.** Run the following commands in the project's root directory to set up your database and model.
