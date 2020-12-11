@@ -10,7 +10,7 @@ Below are a few screenshots of the web app.
 1-
 ![graph](https://lh3.googleusercontent.com/pw/ACtC-3cXtSCG4s-MB2D-3W3l4QtSC40sq7esqZU-Ovq02QgeSebROtyjIcQsa6Mqhra00oyajCxKDcnGGLmStrWowcXAhpydPXrz8TGqAVoKJu98PzUZlSjiFR2PilmyIZuNhmApoV_BghIKK32AU-nwfDLt=w1218-h937-no?authuser=0)
 
-![disaster-categories] https://lh3.googleusercontent.com/pw/ACtC-3dpqow-QKudII_1PJnUXDaT4JYvupuYApFzzFTFvPAbZEc55_F3nmV3EZksLLrzCSLoaCcbNp_6gckk8DQXanDVlMEwhKg2A1Hhr9SfvX25SdLH8plH2Frx8MH76gfPLynxR_3NW7zOKJrjXzPraPmV=w1032-h924-no?authuser=0
+![disaster-categories] (https://lh3.googleusercontent.com/pw/ACtC-3dpqow-QKudII_1PJnUXDaT4JYvupuYApFzzFTFvPAbZEc55_F3nmV3EZksLLrzCSLoaCcbNp_6gckk8DQXanDVlMEwhKg2A1Hhr9SfvX25SdLH8plH2Frx8MH76gfPLynxR_3NW7zOKJrjXzPraPmV=w1032-h924-no?authuser=0)
 
 The project was started in 2020 by Gutelvam as a Udacity Nanodegree of project.
 
