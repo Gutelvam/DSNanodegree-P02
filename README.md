@@ -15,8 +15,6 @@ Below are a few screenshots of the web app.
 ![disaster-categories](https://lh3.googleusercontent.com/pw/ACtC-3dpqow-QKudII_1PJnUXDaT4JYvupuYApFzzFTFvPAbZEc55_F3nmV3EZksLLrzCSLoaCcbNp_6gckk8DQXanDVlMEwhKg2A1Hhr9SfvX25SdLH8plH2Frx8MH76gfPLynxR_3NW7zOKJrjXzPraPmV=w1032-h924-no?authuser=0)
 
 
-<h4>Installation</h4>
-
 
 ***Dependencies***
 
