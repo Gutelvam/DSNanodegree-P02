@@ -46,7 +46,7 @@ Disaster response app requires:
 ***User installation***
 
 
-If you already have a working installation of scikit-learn, the easiest way to install all others packages is using pip:
+If you already have a working installation of scikit-learn, the easiest way to install all others packages like Flask, Joblib and nltk by using pip:
  >!pip install packagename
 
 
