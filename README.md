@@ -59,7 +59,7 @@ If you already have a working installation of scikit-learn, the easiest way to i
     - To run ML pipeline that trains classifier and saves
         `python ./models/train_classifier.py ./data/Disaster.db ./models`
 
-**2.** Run the following command in the app's directory to run your web app.
+**2.** Run the following command in the root directory to run your web app.
     `python ./app/run.py`
 
 **3.** Go to http://127.0.0.1:3001/
