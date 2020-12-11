@@ -46,7 +46,7 @@ If you already have a working installation of  Anaconda, the easiest way to inst
  >pip install packagename
 
 Otherwise you can use the comand below to install all requirements needed: 
- >install -r requirements.txt 
+ >pip install -r requirements.txt 
 
 ## Instructions of usage:
 **1.** Run the following commands in the project's root directory to set up your database and model.
