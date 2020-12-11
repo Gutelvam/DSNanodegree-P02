@@ -38,13 +38,13 @@ def load_data(database_filepath):
 
 def tokenize(text):
     """Normalize, tokenize and stem text string
-
+    
     Args:
         text -> String containing message for processing
 
     Returns:
-        clean_tokens -> List containing normalized and
-                        remove unecessary whitespaces.
+        clean_tokens -> List containing normalized text and
+                        removed unecessary whitespaces.
     """
     tokens = word_tokenize(text)
     lemmatizer = WordNetLemmatizer()
@@ -87,7 +87,7 @@ def improve_model(model, Xtrain, ytrain):
     Returns:
         cv -> Gridsearchcv object that transforms the data,
               creates the model object and finds the optimal
-              model parameters.
+              hyperparameters.
     """
     parameters = {
         "vect__min_df": [1, 5],
@@ -131,7 +131,7 @@ def evaluate_model(model, Xtest, ytest, category_names):
 
 
 def save_model(model, model_filepath):
-    """Pickle fitted model.
+    """Save a Pickle object with fitted model.
 
     Args:
         model -> model object. Fitted model object.
