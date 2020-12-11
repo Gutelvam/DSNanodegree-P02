@@ -39,7 +39,7 @@ Disaster response app requires:
 
         -pandas(>=1.0.3)
 	
-	-plotly==4.14.1
+	    -plotly==4.14.1
 
 ***User installation***
 
