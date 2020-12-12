@@ -6,7 +6,7 @@ In the Project Workspace contain real messages that were sent during disaster ev
 
 This project includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app also display visualizations of the data. This project will show off my software skills, including my ability to create basic data pipelines write clean and  organized code!
 
-The project was started in 2020 by Gutelvam as an Udacity Nanodegree project.
+The project was started in 2020 by ![Gutelvam](https://github.com/Gutelvam) as an Udacity Nanodegree project, you can check all my public repositories by clicking here: ![Go to repository](https://github.com/Gutelvam).
 
 Below are a few screenshots of the web app.
 
@@ -41,7 +41,6 @@ Disaster response app requires:
 
 ***User installation***
 
-
 If you already have a working installation of  Anaconda, the easiest way to install all others packages like Flask, plotly and nltk by using pip:
  >pip install packagename
 
@@ -49,6 +48,7 @@ Otherwise you can use the comand below to install all requirements needed:
  >pip install -r requirements.txt 
 
 ## Instructions of usage:
+
 **1.** Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
